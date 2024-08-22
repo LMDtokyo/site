@@ -97,6 +97,3 @@ git push origin branch-name
 
 ## Contributors
 
-<a href="https://github.com/Peacexoom/AnimeHub/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Peacexoom/AnimeHub" />
-</a>
