@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color:  #10141e;
+}
+
+.shadow{
+    box-shadow: inset 0px -20px 20px 20px #0000008c;
+}
+
+.shadowbackdrop{
+  box-shadow: inset 0px -90px 30px 0px #0000008c;
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
+
+/* Apply transition effect to all buttons */
+button, .btn-link {
+    transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover for all buttons */
+button:hover, .btn-link:hover {
+    background-color: #4a5568;
+}
+
+
+/* loader */
+
+.loader {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: relative;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    animation: animloader 2s ease-in-out infinite;
+  }
+  .loader::after {
+    animation-delay: 1s;
+  }
+
+@keyframes animloader {
+    0%, 100% {
+      transform: scale(0);
+      opacity: 1;
+}
+    50% {
+      transform: scale(1);
+      opacity: 0;
+}
+  }
+  
+  /* Dark Mode Styles for SweetAlert2 */
+.swal2-popup {
+  background-color: #19191a;
+  color: #e1e1e1;
+}
+
+.swal2-title {
+  color: #e1e1e1;
+}
+
+.swal2-content {
+  color: #e1e1e1;
+}
+
+.swal2-actions {
+  color: #e1e1e1;
+}
+
+.swal2-confirm {
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 7px;
+  background-color: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.swal2-cancel {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 7px;
+
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
+
+.swal2-icon {
+  background-color: #19191a;
+  color: #e1e1e1;
+}
+
+.swal2-input {
+  color: #e1e1e1;
+  background-color: #282828;
+}
+
+.swal2-validation-message {
+  color: #e1e1e1;
+  background-color: #282828;
+}
+
+.swal2-progresssteps {
+  background-color: #282828;
+}
+
+.swal2-progress-step {
+  background-color: #444;
+  border-color: #555;
+}
+
+.swal2-timer-progress-bar {
+  background: rgba(225, 225, 225, 0.6);
+}
